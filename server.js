@@ -5,8 +5,8 @@ const { encrypt, decrypt } = require('./script');
 const app = express();
 app.use(express.json());
 
-// Use the same SECRET_KEY as in script.js
-const SECRET_KEY = 'mySuperSecretKey123'; // Match this with script.js
+const SECRET_KEY = 'mySuperSecretKey123';
+
 
 // Dummy login endpoint
 app.post('/login', (req, res) => {
